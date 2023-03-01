@@ -1,5 +1,5 @@
 // This is free and unencumbered software released into the public domain.
-// Author: NotAlexNoyle (admin@true-og.net)
+// Author: s0me0ne-coder
 
 package plugin;
 
