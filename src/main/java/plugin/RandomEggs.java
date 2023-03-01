@@ -23,8 +23,6 @@ public class RandomEggs extends JavaPlugin {
 	// What to do when the plugin is run by the server.
 	public void onEnable() {
 		isRunning = true;
-		getServer().getPluginManager().registerEvents(onDragonEggDrop(), (Plugin) this);
-		
 	}
 
 	// What to do when the plugin is disabled by the server (such as during a reboot).
