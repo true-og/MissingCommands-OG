@@ -11,13 +11,13 @@ import java.util.Random;
 
 // Extending this class is standard bukkit boilerplate for any plugin, or else the server software won't load the classes.
 public class RandomEggs extends JavaPlugin {
-	bool isRunning = false;
-	
+	boolean isRunning = false;
+	Random r = new Random();
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onDragonEggDrop(DragonEggFormEvent event) {
 		// 10% chance
-		if (isRunning && Random.nextDouble < 0.1) {event.setCanceled = false;}
-		else {event.setCanceled = true;}
+		if (isRunning && r.nextDouble < 0.1) {event.setCanceled(false);}
+		else {event.setCanceled(true);}
 	}
 	
 	// What to do when the plugin is run by the server.
