@@ -5,7 +5,7 @@ plugins {
 
 }
 
-group = "net.trueog.noclip-og"
+group = "net.trueog.randomeggs-og"
 version = "1.0"
 
 def apiVersion = "1.18.2" // Declare minecraft server target version.
