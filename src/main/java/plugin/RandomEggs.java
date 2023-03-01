@@ -16,7 +16,7 @@ public class RandomEggs extends JavaPlugin{
 	// What to do when the plugin is run by the server.
 	public void onEnable() {
 		// register the event
-		getServer().getPluginManager().registerEvents(new RandomEggs(), this);
+		getServer().getPluginManager().registerEvents(new Listeners(), this);
 	}
 
 }
