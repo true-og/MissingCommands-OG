@@ -16,8 +16,8 @@ public class RandomEggs extends JavaPlugin {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public class DragonEggFormEvent extends RandomEggs {
 		// 10% chance
-		if (this.isRunning && Random.nextDouble < 0.1) event.setCanceled = false;
-		else event.setCanceled = true;
+		if (this.isRunning && Random.nextDouble < 0.1) {event.setCanceled = false;}
+		else {event.setCanceled = true;}
 	}
 	
 	// What to do when the plugin is run by the server.
