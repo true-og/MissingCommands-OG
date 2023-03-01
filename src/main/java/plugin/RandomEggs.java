@@ -3,11 +3,7 @@
 
 package plugin;
 
-import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
-import io.papermc.paper.event.block.DragonEggFormEvent;
-
 
 // Extending this class is standard bukkit boilerplate for any plugin, or else the server software won't load the classes.
 public class RandomEggs extends JavaPlugin{

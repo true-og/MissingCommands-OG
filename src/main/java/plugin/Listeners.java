@@ -1,6 +1,12 @@
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
+package plugin;
+
 import java.util.Random;
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+
+import io.papermc.paper.event.block.DragonEggFormEvent;
 public class Listeners implements Listener {
   
 	@EventHandler(priority = EventPriority.HIGHEST)
