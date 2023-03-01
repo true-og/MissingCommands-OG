@@ -10,7 +10,7 @@ import io.papermc.paper.event.block.DragonEggFormEvent;
 import java.util.Random;
 
 // Extending this class is standard bukkit boilerplate for any plugin, or else the server software won't load the classes.
-public class RandomEggs extends JavaPlugin {
+public class RandomEggs extends JavaPlugin implements EventListener{
 	boolean isRunning = false;
 	Random r = new Random();
 	@EventHandler(priority = EventPriority.HIGHEST)
@@ -23,6 +23,8 @@ public class RandomEggs extends JavaPlugin {
 	// What to do when the plugin is run by the server.
 	public void onEnable() {
 		isRunning = true;
+		// register the event
+		getServer().getPluginManager().registerEvents(new RandomEggs(), this);
 	}
 
 	// What to do when the plugin is disabled by the server (such as during a reboot).
