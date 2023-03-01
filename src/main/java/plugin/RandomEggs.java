@@ -7,7 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import io.papermc.paper.event.block.DragonEggFormEvent
-
+import java.util.Random;
 
 // Extending this class is standard bukkit boilerplate for any plugin, or else the server software won't load the classes.
 public class RandomEggs extends JavaPlugin {
@@ -16,8 +16,9 @@ public class RandomEggs extends JavaPlugin {
 	@EventHandler
 	public class DragonEggFormEvent extends RandomEggs {
         // 10% chance
-	// if (this.isRunning && )
-}
+	if (this.isRunning && Random.nextDouble < 0.1) event.setCanceled = false;
+        else event.setCanceled = true;
+	}
 	
 	// What to do when the plugin is run by the server.
 	public void onEnable() {
