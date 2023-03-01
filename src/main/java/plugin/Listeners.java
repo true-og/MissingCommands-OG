@@ -1,3 +1,5 @@
+// This is free and unencumbered software released into the public domain
+// Author: s0me0ne-coder
 package plugin;
 
 import java.util.Random;
