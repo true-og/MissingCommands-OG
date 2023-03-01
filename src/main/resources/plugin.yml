@@ -1,17 +1,7 @@
-name: NoClip-OG
-author: NotAlexNoyle
-description: A Spigot plugin that allows you to phase through solid blocks like in Portal 2's console mode!
-website: https://github.com/NotAlexNoyle/NoClip-OG
+name: RandomEggs-OG
+author: s0me0ne-coder
+description: A paper plugin that makes the dragon egg generate with a 10% chance
+website: https://github.com/s0me0ne-coder/RandomEggs-OG
 version: 1.0
 api-version: 1.18
-main: plugin.NoClip
-
-commands:
-  noclip:
-    description: Phase through blocks like in Portal 2!
-    aliases: [nc]
-    
-permissions:
-  noclip.use:
-    description: Permission to phase through blocks.
-    default: op
+main: plugin.RandomEggs
