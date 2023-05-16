@@ -1,1 +1,3 @@
-Dragon egg generates with a 10% chance, overrides other events so be careful using it
+# Template-OG
+
+A blank plugin for TrueOG from which to base other plugins off of.
