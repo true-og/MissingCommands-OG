@@ -7,7 +7,7 @@ plugins {
 }
 
 group = 'net.trueog.template-og' // Declare bundle identifier.
-version = '1.0'
+version = '1.0' // Declare plugin version (will be in .jar).
 
 def apiVersion = "1.18.2" // Declare minecraft server target version.
 def targetJavaVersion = 17 // Declare java compatibility minimum.
@@ -38,12 +38,19 @@ repositories {
         url "https://repo.purpurmc.org/snapshots" // Get purpur API from purpur maven repository.
 
     }
+    
+    maven {
+    
+        url "https://jitpack.io"
+    
+    }
 
 }
 
 dependencies {
 
     compileOnly "org.purpurmc.purpur:purpur-api:1.18.2-R0.1-SNAPSHOT" // Declare purpur API version to be packaged.
+    implementation "com.github.christianniehaus:Utilities-OG:e9ebc26c1f" // Import Utilities-OG API.
 
 }
 
