@@ -9,25 +9,25 @@ commands:
    kit:
       description: Placeholder
       usage: /kit
-      permission: luckperms.default
+      permission: missingcommandsog.canviewplaceholdercommands
    wild:
       description: Placeholder
       usage: /wild
-      permission: luckperms.default
+      permission: missingcommandsog.canviewplaceholdercommands
    guild:
       description: Placeholder
       usage: /guild
-      permission: luckperms.default
+      permission: missingcommandsog.canviewplaceholdercommands
    f:
       description: Placeholder
       usage: /f
-      permission: luckperms.default
+      permission: missingcommandsog.canviewplaceholdercommands
    faction:
       description: Placeholder
       usage: /faction
-      permission: luckperms.default
+      permission: missingcommandsog.canviewplaceholdercommands
    seed:
       description: Placeholder
       usage: /seed
-      permission: luckperms.default
+      permission: missingcommandsog.canviewplaceholdercommands
 
