@@ -31,3 +31,7 @@ commands:
       usage: /seed
       permission: missingcommandsog.canviewplaceholdercommands
 
+   rtp:
+      description: Placeholder
+      usage: /rtp
+      permission: missingcommandsog.canviewplaceholdercommands

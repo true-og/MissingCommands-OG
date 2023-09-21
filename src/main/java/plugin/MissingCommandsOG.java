@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class MissingCommandsOG extends JavaPlugin {
 
 	// What to do when the plugin is run by the server.
+	@Override
 	public void onEnable() {
 
 		// Register the event.
@@ -22,3 +23,13 @@ public class MissingCommandsOG extends JavaPlugin {
 	}
 
 }
+/*
+FCommand.java
+FactionCommand.java
+GuildCommand.java
+KitCommand.java
+MissingCommandsOG.java
+RTPCommand.java
+SeedCommand.java
+WildCommand.java
+*/
