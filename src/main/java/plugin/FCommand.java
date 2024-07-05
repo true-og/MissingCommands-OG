@@ -9,11 +9,17 @@ public class FCommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		if(sender instanceof Player) {
-			Player player = (Player) sender;
-			player.sendMessage("Use /union instead of /f!");
-		}
-		return true;
-	}
-}
 
+		if(sender instanceof Player) {
+
+			Player player = (Player) sender;
+
+			Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix() + "&6Use &e/union &6instead of &e/f&6!"));
+
+		}
+
+		return true;
+
+	}
+
+}

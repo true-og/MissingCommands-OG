@@ -8,10 +8,18 @@ public class SeedCommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+
 		if(sender instanceof Player) {
+
 			Player player = (Player) sender;
-			player.sendMessage("Nope!");
+
+			Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix() + "&cOh, no you don't! &6Seed hunting is a banable offense."));
+
+
 		}
-	return true;
+
+		return true;
+
 	}
+
 }

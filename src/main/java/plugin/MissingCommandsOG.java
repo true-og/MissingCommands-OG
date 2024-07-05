@@ -4,14 +4,21 @@
 package plugin;
 
 import org.bukkit.plugin.java.JavaPlugin;
+
 // Extending this class is standard bukkit boilerplate for any plugin, or else the server software won't load the classes.
 public class MissingCommandsOG extends JavaPlugin {
+
+	// Declare plugin instance.
+	private static MissingCommandsOG plugin;
 
 	// What to do when the plugin is run by the server.
 	@Override
 	public void onEnable() {
 
-		// Register the event.
+		// Set plugin instance.
+		plugin = this;
+
+		// Register the events.
 		this.getCommand("wild").setExecutor(new WildCommand());
 		this.getCommand("rtp").setExecutor(new RTPCommand());
 		this.getCommand("seed").setExecutor(new SeedCommand());
@@ -22,14 +29,18 @@ public class MissingCommandsOG extends JavaPlugin {
 
 	}
 
+	public String getPrefix() {
+
+		return "&8[&2True&4OG&8] ";
+
+	}
+
+	// Accessor constructor so that the main class (this) can be referenced from other classes.
+	public static MissingCommandsOG getPlugin() {
+
+		// Pass instance of main.
+		return plugin;
+
+	}
+
 }
-/*
-FCommand.java
-FactionCommand.java
-GuildCommand.java
-KitCommand.java
-MissingCommandsOG.java
-RTPCommand.java
-SeedCommand.java
-WildCommand.java
-*/

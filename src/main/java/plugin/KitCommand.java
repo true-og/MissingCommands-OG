@@ -9,10 +9,17 @@ public class KitCommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		
 		if(sender instanceof Player) {
+			
 			Player player = (Player) sender;
-			player.sendMessage("No kits here for anybody....");
+			
+			Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix() + "&6There are no kits on &2True&4OG &6for any rank."));
+			
 		}
+		
 		return true;
+		
 	}
+	
 }

@@ -8,10 +8,17 @@ public class WildCommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+
 		if(sender instanceof Player) {
+
 			Player player = (Player) sender;
-			player.sendMessage("/wild will not be implemented! Escape spawn yourself!");
+			
+			Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix() + "&e/wild &6will not be implemented! Escape spawn yourself!"));
+
 		}
-	return true;
+
+		return true;
+
 	}
+
 }

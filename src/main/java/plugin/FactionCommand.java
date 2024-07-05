@@ -11,11 +11,15 @@ public class FactionCommand implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
 		if(sender instanceof Player) {
+
 			Player player = (Player) sender;
-			player.sendMessage("Use /union instead of /faction!");
+
+			Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix() + "&6Use &e/union &6instead of &e/faction&6!"));
+
 		}
 
-	return true;
+		return true;
 
 	}
+
 }
