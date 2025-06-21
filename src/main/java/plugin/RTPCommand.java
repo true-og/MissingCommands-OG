@@ -7,19 +7,19 @@ import org.bukkit.entity.Player;
 
 public class RTPCommand implements CommandExecutor {
 
-	@Override
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+    @Override
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
-		if(sender instanceof Player) {
+        if (sender instanceof Player) {
 
-			Player player = (Player) sender;
+            Player player = (Player) sender;
 
-			Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix() + "&e/rtp &6will not be implemented! Escape spawn yourself!"));
+            Utils.missingCommandsOGMessage(
+                    player,
+                    (MissingCommandsOG.getPlugin().getPrefix()
+                            + "&e/rtp &6will not be implemented! Escape spawn yourself!"));
+        }
 
-		}
-
-		return true;
-
-	}
-
+        return true;
+    }
 }
