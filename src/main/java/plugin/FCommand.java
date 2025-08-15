@@ -14,10 +14,13 @@ public class FCommand implements CommandExecutor {
 
             Player player = (Player) sender;
 
-            Utils.missingCommandsOGMessage(
-                    player, (MissingCommandsOG.getPlugin().getPrefix() + "&6Use &e/union &6instead of &e/f&6!"));
+            Utils.missingCommandsOGMessage(player,
+                    (MissingCommandsOG.getPlugin().getPrefix() + "&6Use &e/union &6instead of &e/f&6!"));
+
         }
 
         return true;
+
     }
+
 }

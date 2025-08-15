@@ -14,11 +14,13 @@ public class KitCommand implements CommandExecutor {
 
             Player player = (Player) sender;
 
-            Utils.missingCommandsOGMessage(
-                    player,
+            Utils.missingCommandsOGMessage(player,
                     (MissingCommandsOG.getPlugin().getPrefix() + "&6There are no kits on &2True&4OG &6for any rank."));
+
         }
 
         return true;
+
     }
+
 }

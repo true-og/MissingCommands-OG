@@ -14,12 +14,13 @@ public class SeedCommand implements CommandExecutor {
 
             Player player = (Player) sender;
 
-            Utils.missingCommandsOGMessage(
-                    player,
-                    (MissingCommandsOG.getPlugin().getPrefix()
-                            + "&cOh, no you don't! &6Seed hunting is a banable offense."));
+            Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix()
+                    + "&cOh, no you don't! &6Seed hunting is a banable offense."));
+
         }
 
         return true;
+
     }
+
 }

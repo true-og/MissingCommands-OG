@@ -27,17 +27,22 @@ public class MissingCommandsOG extends JavaPlugin {
         this.getCommand("faction").setExecutor(new FactionCommand());
         this.getCommand("guild").setExecutor(new GuildCommand());
         this.getCommand("kit").setExecutor(new KitCommand());
+
     }
 
     public String getPrefix() {
 
         return "&8[&2True&4OG&8] ";
+
     }
 
-    // Accessor constructor so that the main class (this) can be referenced from other classes.
+    // Accessor constructor so that the main class (this) can be referenced from
+    // other classes.
     public static MissingCommandsOG getPlugin() {
 
         // Pass instance of main.
         return plugin;
+
     }
+
 }

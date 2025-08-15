@@ -14,12 +14,13 @@ public class RTPCommand implements CommandExecutor {
 
             Player player = (Player) sender;
 
-            Utils.missingCommandsOGMessage(
-                    player,
-                    (MissingCommandsOG.getPlugin().getPrefix()
-                            + "&e/rtp &6will not be implemented! Escape spawn yourself!"));
+            Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix()
+                    + "&e/rtp &6will not be implemented! Escape spawn yourself!"));
+
         }
 
         return true;
+
     }
+
 }

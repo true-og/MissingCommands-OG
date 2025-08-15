@@ -14,10 +14,13 @@ public class GuildCommand implements CommandExecutor {
 
             Player player = (Player) sender;
 
-            Utils.missingCommandsOGMessage(
-                    player, (MissingCommandsOG.getPlugin().getPrefix() + "&6Use &e/union &6instead of &e/guild&6!"));
+            Utils.missingCommandsOGMessage(player,
+                    (MissingCommandsOG.getPlugin().getPrefix() + "&6Use &e/union &6instead of &e/guild&6!"));
+
         }
 
         return true;
+
     }
+
 }

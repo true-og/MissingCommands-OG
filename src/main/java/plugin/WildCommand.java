@@ -14,12 +14,13 @@ public class WildCommand implements CommandExecutor {
 
             Player player = (Player) sender;
 
-            Utils.missingCommandsOGMessage(
-                    player,
-                    (MissingCommandsOG.getPlugin().getPrefix()
-                            + "&e/wild &6will not be implemented! Escape spawn yourself!"));
+            Utils.missingCommandsOGMessage(player, (MissingCommandsOG.getPlugin().getPrefix()
+                    + "&e/wild &6will not be implemented! Escape spawn yourself!"));
+
         }
 
         return true;
+
     }
+
 }
