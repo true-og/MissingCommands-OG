@@ -35,3 +35,7 @@ commands:
       description: Placeholder
       usage: /rtp
       permission: missingcommandsog.canviewplaceholdercommands
+permissions:
+   seed.bypass:
+      description: Allows access to the default Minecraft /seed command.
+      default: false

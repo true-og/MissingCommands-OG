@@ -10,6 +10,11 @@ public class SeedCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
+        if (sender.hasPermission("seed.bypass")) {
+            sender.getServer().dispatchCommand(sender, "minecraft:seed");
+            return true;
+        }
+
         if (sender instanceof Player) {
 
             Player player = (Player) sender;
